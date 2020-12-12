@@ -1,0 +1,101 @@
+body {
+	--x: 0px;
+	--y: 0px;
+	image-rendering: pixelated;
+	background: url(pplogo.png), url(tiles.png), url(station.png), url(planet.png), url(layer3.png), url(layer2.png), url(layer1.png);
+	background-blend-mode: normal, normal, normal, normal, screen, screen, normal;
+	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat, repeat, repeat;
+	background-position: calc(((var(--x) * 0.01) + 50vw) - 200px) calc(((var(--y) * 0.01) + 15vh) - 100px), calc((var(--x) * 0.025)) calc((100vh + (100vh * 0.01) + (var(--y) * 0.01) ) - 600px), calc(((var(--x) * 0.01) + 50vw) - 63px) calc(((var(--y) * 0.01) + 50vh) - 43px), calc((var(--x) * 0.025) + 60vw) calc((var(--y) * 0.025) + 15vh), calc(var(--x)*0.033) calc(var(--y)*0.033), calc(var(--x)*0.05) calc(var(--y)*0.05), calc(var(--x)*0.10) calc(var(--y)*0.10);
+}
+#clown {
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+html,
+		body {
+			margin: 0;
+			height: 100%;
+		}
+
+		.infoBox {
+			position: fixed;
+			top: 15px;
+			left: 15px;
+			height: auto;
+			width: auto;
+			padding: 5px 5px 5px 5px;
+			font-size: 15px;
+			color: rgba(230, 230, 255, 1);
+			font-family: Menlo, Consolas, Monaco, "Lucida Console", monospace;
+			border-top: 1px;
+			border-left: 1px;
+			border-right: 1px;
+			border-bottom: 1px;
+			border-style: dashed;
+		}
+
+		.fluxBox {
+
+			position: fixed;
+			left: 80%;
+			top: 15px;
+			height: auto;
+			width: 10%;
+			padding: 5px 5px 5px 5px;
+			font-size: 15px;
+			color: rgba(230, 230, 255, 1);
+			font-family: Menlo, Consolas, Monaco, "Lucida Console", monospace;
+			border-top: 1px;
+			border-left: 1px;
+			border-right: 1px;
+			border-bottom: 1px;
+			border-style: dashed;
+		}
+
+		.greenBG {
+			background: repeating-linear-gradient(rgba(25, 255, 125, 0.3),
+					rgba(25, 255, 125, 0.5) 1px,
+					rgba(50, 255, 100, 0.7) 2px);
+			border-color: rgba(0, 255, 100, 0.5);
+		}
+
+		.blueBG {
+			background: repeating-linear-gradient(rgba(25, 125, 255, 0.3),
+					rgba(25, 125, 255, 0.5) 1px,
+					rgba(50, 100, 255, 0.7) 2px);
+			border-color: rgba(0, 100, 255, 0.5);
+		}
+
+		.redBG {
+			background: repeating-linear-gradient(rgba(255, 125, 25, 0.3),
+					rgba(255, 125, 25, 0.5) 1px,
+					rgba(255, 100, 50, 0.7) 2px);
+			border-color: rgba(255, 25, 25, 0.5);
+		}
+
+		.deltaBG {
+			background: repeating-linear-gradient(rgba(255, 255, 0, 0.5),
+					rgba(0, 0, 0, 0.5) 1px,
+					rgba(0, 0, 0, 0.5) 2px);
+			border-color: rgba(255, 200, 0, 0.7);
+		}
+
+		table {
+			width: 100%;
+			height: 100%;
+			color: rgba(230, 230, 255, 1);
+			font-family: monospace;
+			text-align: left;
+		}
+
+		th {
+			width: 33%;
+			height: 33%;
+			padding: 2px 6px 2px 6px;
+		}
